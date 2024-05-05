@@ -1,0 +1,231 @@
+/* CSS Document */
+
+* {
+	padding: 0;
+	margin: 0;
+	color: var(--text-color);
+	font-family: "Roboto";
+	font-size: 20px;
+}
+
+html {
+	background-color: var(--theme-black);
+	overflow: hidden;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	overflow: hidden;
+}
+
+a {
+	color: red;
+}
+
+hr {
+	margin: 15px 0px;
+	border-color: white;
+	border: 5;
+}
+
+.page-content {
+	position: relative;
+	overflow-y: auto;
+	height: 100%;
+}
+
+.nav-bar {
+	background: var(--theme-gradient-medium);
+	overflow: hidden;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	height: auto;
+}
+
+.nav-bar button, .nav-bar h1 {
+	float: left;
+	text-align: center;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-size: 1.5rem;
+	height: 100%;
+	background-color: rgba(0,0,0,0);
+	border-width: 0px;
+}
+
+.nav-bar h1 {
+	cursor: default;
+}
+
+.nav-bar button:hover {
+	background-color: var(--theme-medium);
+	cursor: pointer;
+}
+
+.nav-bar button.active {
+	background-color: var(--theme-bright);
+	color: black;
+}
+
+#nav-buttons {
+	float: right;
+	margin-right: 50px;
+}
+
+.content {
+	display: grid;
+	background: var(--theme-gradient-medium);
+	border-radius: 5px;
+	margin: 20px;
+	padding: 10px 25px;
+	box-shadow: 5px -5px var(--theme-dark);
+}
+
+.content h1, .content p, .content ul{
+	margin: 20px 0px;
+}
+
+.content details {
+	margin-bottom: 15px;
+}
+
+.content h1 {
+	font-size: 1.5rem;
+	margin: 10px 0px
+}
+
+.content h2 {
+	font-size: 1.2rem;
+	margin: 10px 0px;
+}
+
+.content p, .content li, .content details {
+	margin: 10px 0px 10px;
+}
+
+.content li {
+	margin: 10px 35px;
+}
+
+.title h1 {
+	font-size: 2rem;
+}
+
+.page-embed {
+	border-width: 0;
+	width: 100%;
+	height: 100%;
+	margin-top: 60px;
+}
+
+.sidebar {
+	background: var(--theme-gradient-dark);
+	width: 100%;
+	height: 100%;
+}
+
+.sidebar button {
+	float: top;
+	width: 100%;
+	background: rgba(0,0,0,0);
+	border-width: 0px;
+	font-size: 1.5rem;
+	text-align: left;
+	padding: 10px;
+}
+
+.sidebar button:hover {
+	background: var(--theme-gradient-medium);
+	cursor: pointer;
+}
+
+.sidebar button.active {
+	background: var(--theme-bright);
+	color: var(--theme-black);
+}
+
+#current-page {
+	height: calc(100% - 60px);
+}
+
+.full-width, .half-width, .showcase, .full-width-div {
+	margin: 20px;
+}
+
+.full-width, .half-width, .third-width, .showcase, .portrait, .outline {
+	box-shadow: 0 0 0 6px var(--theme-dark);
+}
+
+.full-width {
+	width: 100%;
+	height: auto;
+}
+
+.half-width {
+	width: 50%;
+	height: auto;
+}
+
+.full-width-div {
+	position: relative;
+	padding-bottom: 56.25%;
+}
+
+.full-width-div iframe {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.showcase {
+	width: 45%;
+	height: auto;
+}
+
+.portrait {
+	margin: 20px 5px;
+	width: 25%;
+	height: auto;
+	border-radius: 10%;
+}
+
+.stacked {
+	float: left;
+	margin-right: 20px;
+	margin: 10px;
+}
+
+.stacked-container .stacked {
+	height: 100px;
+}
+
+.social-container .stacked {
+	height: 35px;
+}
+
+.stacked-container, .social-container {
+	padding: 15px 0px;
+	height: 100%;
+}
+
+.column {
+	height: 100%;
+	float: left;
+	margin: 15px;
+}
+
+.column > video, .column > img, .column > div, .column > iframe {
+	margin: 15px 0px;
+}
+
+.medium-image {
+	margin: 15px;
+	max-width: 80%;
+	float: left;
+}

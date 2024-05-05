@@ -1,0 +1,14 @@
+/* CSS Document */
+
+:root {
+	--theme-black: rgb(160, 170, 180);
+	--theme-dark: rgb(200, 210, 225);
+	--theme-medium: rgb(220, 230, 240);
+	--theme-bright: rgb(230, 240, 255);
+	
+	--theme-gradient-dark: linear-gradient(to bottom right, var(--theme-dark), var(--theme-black));
+	--theme-gradient-medium: linear-gradient(to bottom right, var(--theme-medium), var(--theme-dark));
+	--theme-gradient-bright: linear-gradient(to bottom, var(--theme-medium), var(--theme-bright), var(--theme-medium));
+	
+	--text-color: black;
+}
